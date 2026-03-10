@@ -103,24 +103,6 @@ jounal_comparison/
 | Max ATE (m) | 2.34 | 3.04 | **1.23** |
 | RPE (m) | 0.034 | **0.027** | 0.034 |
 
-## Generated Plots
-
-The `plots/` directory contains publication-quality EPS figures:
-
-- `acceleration_comparison.eps` — Linear acceleration comparison across platforms
-- `angular_acceleration_comparison.eps` — Angular acceleration comparison
-- `pitch_roll_comparison.eps` — Pitch and roll angles over time
-- `vibration_comparison.eps` — Vibration RMS analysis
-- `trajectory_comparison.eps` — Ground truth vs. estimated trajectories
-- `ate_over_time.eps` — Absolute Trajectory Error evolution
-- `slam_icp_comparison.eps` — ICP odometry performance
-- `metrics_bar_comparison.eps` — Summary bar chart comparison
-
-## Authors
-
-- Alessandro
-- John
-
 ## License
 
 This project is intended for academic and research purposes.
