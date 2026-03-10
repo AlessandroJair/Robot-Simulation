@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Argumentos -->
+  <arg name="robot_name" default="robot"/>
+  <arg name="cmd_vel_topic" default="/cmd_vel"/>
+  <arg name="output_dir" default="$(env HOME)/metrics_output"/>
+  <arg name="model_name" default="$(arg robot_name)"/>
+
+  <!-- Nodo de registro de metricas -->
+  <node pkg="robot_metrics" type="metrics_logger.py" name="metrics_logger" output="screen">
+    <param name="robot_name" value="$(arg robot_name)"/>
+    <param name="cmd_vel_topic" value="$(arg cmd_vel_topic)"/>
+    <param name="output_dir" value="$(arg output_dir)"/>
+    <param name="model_name" value="$(arg model_name)"/>
+  </node>
+
+</launch>

@@ -1,0 +1,152 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <include>
+      <uri>model://differential</uri>
+      <pose>33.5 0.2 1.5 0 0 0</pose>
+    </include>
+    <gui>
+      <camera name="user_camera">
+        <pose>-20 0 50 0 1.0 0</pose>
+      </camera>
+    </gui>
+    <scene>
+      <shadows>0</shadows>
+    </scene>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun_2</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <static>true</static>
+      <pose>-70 0 -0.6 0 0 0</pose>
+      <uri>model://grass_plane</uri>
+    </include>
+
+    <include>
+      <static>true</static>
+      <pose>-1.1 0.18 -1 0 0 -1.586</pose>
+      <name>w1</name>
+      <uri>model://smaze_wall</uri>
+    </include>
+    <include>
+      <static>true</static>
+      <pose>-31.463 -41.132 8.711 0 -0.3784 -1.586</pose>
+      <name>w2</name>
+      <uri>model://smaze_wall</uri>
+    </include>
+    <include>
+      <static>true</static>
+      <pose>74.0 -40.724 5.897 0 -0.3784 -1.586</pose>
+      <name>w3</name>
+      <uri>model://smaze_wall</uri>
+    </include>
+    <include>
+      <static>true</static>
+      <pose>64.79 -69.038 1.147 0 0.2157 -1.586</pose>
+      <name>w4</name>
+      <uri>model://smaze_wall</uri>
+    </include>
+    <include>
+      <static>true</static>
+      <pose>108.515 -69.67 -0.8383 0 0.2157 -1.586</pose>
+      <name>w5</name>
+      <uri>model://smaze_wall</uri>
+    </include>
+    <include>
+      <static>true</static>
+      <pose>86.213 -52.06 1.763 0 0.0 -1.1254</pose>
+      <name>w6</name>
+      <uri>model://smaze_wall</uri>
+    </include>
+
+
+    <include>
+      <static>true</static>
+      <pose>-2 0 -1 0 0 0</pose>
+      <uri>model://lc_mine</uri>
+    </include>
+
+    <!-- Rampa triangular: 5 m largo, 1.5 m alto, 10 m ancho -->
+    <model name="ramp">
+      <static>true</static>
+      <pose>25.5 -9.5 1.85 1.57 0 4.71239</pose>
+
+      <link name="link">
+
+        <collision name="collision">
+          <geometry>
+            <polyline>
+              <point>0 0</point>
+              <point>5 0</point>      <!-- largo 5 m -->
+              <point>5 1.5</point>    <!-- altura 1.5 m -->
+              <height>10</height>
+            </polyline>
+          </geometry>
+
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.5</mu>
+                <mu2>1.5</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <polyline>
+              <point>0 0</point>
+              <point>5 0</point>
+              <point>5 1.5</point>
+              <height>10</height>
+            </polyline>
+          </geometry>
+
+          <material>
+            <ambient>0.6 0.6 0.6 1</ambient>
+            <diffuse>0.6 0.6 0.6 1</diffuse>
+          </material>
+        </visual>
+
+      </link>
+    </model>
+
+    <!-- Prisma: 2m largo, 0.1m alto, 10m ancho -->
+    <model name="bump">
+      <static>true</static>
+      <pose>54.0 -27.0 5.35 0 0 1.57</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2.5 10 0.1</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.5</mu>
+                <mu2>1.5</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.5 10 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.4 0.3 0.2 1</ambient>
+            <diffuse>0.4 0.3 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>

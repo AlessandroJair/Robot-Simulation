@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<robot name="ensamblajeurdf" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<!-- Transmissions for the 6 wheel joints (rev_9 to rev_14) -->
+<!-- Using VelocityJointInterface for diff_drive compatibility -->
+
+<transmission name="rev_9_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rev_9">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rev_9_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rev_10_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rev_10">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rev_10_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rev_11_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rev_11">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rev_11_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rev_12_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rev_12">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rev_12_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rev_13_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rev_13">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rev_13_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rev_14_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rev_14">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rev_14_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<!-- Differential joint (passive) -->
+<transmission name="differential_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="differential_joint">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="differential_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<!-- Rocker joints (passive) -->
+<transmission name="rocker_r_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rocker_joint_r">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rocker_r_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rocker_l_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rocker_joint_l">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rocker_l_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<!-- Bogie joints (passive) -->
+<transmission name="rev_3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rev_3">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rev_3_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rev_4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rev_4">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rev_4_actr">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

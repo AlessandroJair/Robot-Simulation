@@ -1,0 +1,452 @@
+<?xml version="1.0" ?>
+<robot name="ensamblajeurdf" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Silver" />
+
+<!-- ================= GAZEBO ROS CONTROL ================= -->
+<gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    <robotNamespace>/rocker_bogie</robotNamespace>
+  </plugin>
+</gazebo>
+
+<!-- ================= BODY MATERIALS ================= -->
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>1.0</mu2>
+  <self_collide>false</self_collide>
+  <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference="AcopleRB_1_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>1.0</mu2>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="AcopleRB_2_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>1.0</mu2>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Barra_acople_1_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>1.0</mu2>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Barra_acople_2_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>1.0</mu2>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraBR_1_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>1.0</mu2>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraBR_2_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>1.0</mu2>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraAcople1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraAcople2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="AcopleTubo90_1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="AcopleTubo90__2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Barra_Acople_R_1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Barra_Acople_R_2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Acople_Rodamiento_1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Acople_Rodamiento_2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraAcople3_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraAcople4_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraAcople5_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraAcople6_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="AcopleTubo135_1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="AcopleTubo135_2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="ApoyoServomotor_1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="ApoyoServomotor_2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="ApoyoServomotor_3_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="ApoyoServomotor_4_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraRuedas_1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraRuedas_2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraRuedas_3_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraRuedas_4_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraRuedas_5_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="BarraRuedas_6_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="SoporteMotor_1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="SoporteMotor_2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="SoporteMotor_3_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="SoporteMotor_4_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="SoporteMotor_5_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="SoporteMotor_6_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Motor_1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Motor_2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Motor_3_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Motor_4_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Motor_5_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Motor_6_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<!-- ================= WHEEL FRICTION ================= -->
+<!-- mu1: traccion (rodadura), mu2: lateral (deslizamiento para giro) -->
+<!-- fdir1: direccion de rodadura en frame del body (X=adelante) -->
+<!-- Ruedas esquina: mu2=0.4 (facilitar giro), Ruedas medio: mu=0.75 (estabilidad) -->
+<!-- kp alto y minDepth bajo para evitar deformacion/hundimiento -->
+
+<!-- Rueda_1_1: esquina (rev_12 - RL) -->
+<gazebo reference="Rueda_1_1">
+  <material>Gazebo/DarkGrey</material>
+  <mu1>100.0</mu1>
+  <mu2>0.75</mu2>
+  <fdir1>1 0 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <minDepth>0.001</minDepth>
+  <maxVel>0.01</maxVel>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<!-- Rueda_2_1: esquina (rev_9 - FR) -->
+<gazebo reference="Rueda_2_1">
+  <material>Gazebo/DarkGrey</material>
+  <mu1>100.0</mu1>
+  <mu2>0.75</mu2>
+  <fdir1>1 0 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <minDepth>0.001</minDepth>
+  <maxVel>0.01</maxVel>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<!-- Rueda_3_1: MEDIO (rev_13 - ML) -->
+<gazebo reference="Rueda_3_1">
+  <material>Gazebo/DarkGrey</material>
+  <mu1>100.0</mu1>
+  <mu2>0.75</mu2>
+  <fdir1>1 0 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <minDepth>0.001</minDepth>
+  <maxVel>0.01</maxVel>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<!-- Rueda_4_1: MEDIO (rev_10 - MR) -->
+<gazebo reference="Rueda_4_1">
+  <material>Gazebo/DarkGrey</material>
+  <mu1>100.0</mu1>
+  <mu2>0.75</mu2>
+  <fdir1>1 0 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <minDepth>0.001</minDepth>
+  <maxVel>0.01</maxVel>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<!-- Rueda_5_1: esquina (rev_14 - FL) -->
+<gazebo reference="Rueda_5_1">
+  <material>Gazebo/DarkGrey</material>
+  <mu1>100.0</mu1>
+  <mu2>0.75</mu2>
+  <fdir1>1 0 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <minDepth>0.001</minDepth>
+  <maxVel>0.01</maxVel>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<!-- Rueda_6_1: esquina (rev_11 - RR) -->
+<gazebo reference="Rueda_6_1">
+  <material>Gazebo/DarkGrey</material>
+  <mu1>100.0</mu1>
+  <mu2>0.75</mu2>
+  <fdir1>1 0 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <minDepth>0.001</minDepth>
+  <maxVel>0.01</maxVel>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="AcopleTuboRB_1_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="AcopleTuboRB_2_1">
+  <material>${body_color}</material>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<!-- ================= VELODYNE VLP-16 SENSOR ================= -->
+<gazebo reference="velodyne_base_link">
+  <sensor name="velodyne-VLP16" type="gpu_ray">
+    <pose>0 0 0.0641 0 0 0</pose>
+    <visualize>false</visualize>
+    <update_rate>10</update_rate>
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>1875</samples>
+          <resolution>1</resolution>
+          <min_angle>-3.14159</min_angle>
+          <max_angle>3.14159</max_angle>
+        </horizontal>
+        <vertical>
+          <samples>16</samples>
+          <resolution>1</resolution>
+          <min_angle>-0.261799</min_angle>
+          <max_angle>0.261799</max_angle>
+        </vertical>
+      </scan>
+      <range>
+        <min>0.3</min>
+        <max>130.0</max>
+        <resolution>0.001</resolution>
+      </range>
+      <noise>
+        <type>gaussian</type>
+        <mean>0.0</mean>
+        <stddev>0.008</stddev>
+      </noise>
+    </ray>
+    <plugin name="gazebo_ros_laser_controller" filename="libgazebo_ros_velodyne_gpu_laser.so">
+      <topicName>/velodyne_points</topicName>
+      <frameName>rocker_bogie/velodyne_base_link</frameName>
+      <min_range>0.9</min_range>
+      <max_range>130.0</max_range>
+      <gaussianNoise>0.008</gaussianNoise>
+    </plugin>
+  </sensor>
+</gazebo>
+
+<!-- ================= IMU SENSOR ================= -->
+<gazebo reference="imu_link">
+  <gravity>true</gravity>
+  <sensor name="imu_sensor" type="imu">
+    <always_on>true</always_on>
+    <update_rate>100</update_rate>
+    <visualize>true</visualize>
+    <topic>__default_topic__</topic>
+    <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+      <topicName>/imu/data</topicName>
+      <bodyName>imu_link</bodyName>
+      <updateRateHZ>100.0</updateRateHZ>
+      <gaussianNoise>0.0</gaussianNoise>
+      <xyzOffset>0 0 0</xyzOffset>
+      <rpyOffset>0 0 0</rpyOffset>
+      <frameName>rocker_bogie/imu_link</frameName>
+      <initialOrientationAsReference>false</initialOrientationAsReference>
+    </plugin>
+    <pose>0 0 0 0 0 0</pose>
+    <imu>
+      <angular_velocity>
+        <x><noise type="gaussian"><mean>0</mean><stddev>0.009</stddev></noise></x>
+        <y><noise type="gaussian"><mean>0</mean><stddev>0.009</stddev></noise></y>
+        <z><noise type="gaussian"><mean>0</mean><stddev>0.009</stddev></noise></z>
+      </angular_velocity>
+      <linear_acceleration>
+        <x><noise type="gaussian"><mean>0</mean><stddev>0.021</stddev></noise></x>
+        <y><noise type="gaussian"><mean>0</mean><stddev>0.021</stddev></noise></y>
+        <z><noise type="gaussian"><mean>0</mean><stddev>0.021</stddev></noise></z>
+      </linear_acceleration>
+    </imu>
+  </sensor>
+</gazebo>
+
+<!-- ================= CAMERA SENSOR ================= -->
+<gazebo reference="camera_link">
+  <sensor name="camera_sensor" type="camera">
+    <update_rate>30</update_rate>
+    <camera name="head">
+      <horizontal_fov>1.3962634</horizontal_fov>
+      <image>
+        <width>640</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.02</near>
+        <far>300</far>
+      </clip>
+      <noise>
+        <type>gaussian</type>
+        <mean>0.0</mean>
+        <stddev>0.007</stddev>
+      </noise>
+    </camera>
+    <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>0.0</updateRate>
+      <cameraName>camera</cameraName>
+      <imageTopicName>/camera/image_raw</imageTopicName>
+      <cameraInfoTopicName>/camera/camera_info</cameraInfoTopicName>
+      <frameName>rocker_bogie/camera_optical_frame</frameName>
+      <hackBaseline>0.07</hackBaseline>
+      <distortionK1>0.0</distortionK1>
+      <distortionK2>0.0</distortionK2>
+      <distortionK3>0.0</distortionK3>
+      <distortionT1>0.0</distortionT1>
+      <distortionT2>0.0</distortionT2>
+    </plugin>
+  </sensor>
+</gazebo>
+
+</robot>

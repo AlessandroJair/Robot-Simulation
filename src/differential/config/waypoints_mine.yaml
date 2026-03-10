@@ -1,0 +1,89 @@
+# Configuración de waypoints para navegación
+# Transformados desde rocker_bogie (x*-1, y*-1, yaw+180)
+
+waypoints:
+  - name: "Punto Inicial"
+    x: 0.0
+    y: 0.0
+    yaw: 0.0
+
+  - name: "Primer Giro"
+    x: 19.0
+    y: 0.0
+    yaw: 300.0
+
+  - name: "Segundo Giro"
+    x: 20
+    y: -8.0
+    yaw: 270.0
+
+  - name: "Tercer Giro"
+    x: 20
+    y: -15.0
+    yaw: 270.0
+
+  - name: "Cuarto Giro"
+    x: 21
+    y: -25.0
+    yaw: 270.0
+
+  - name: "Quinto Giro"
+    x: 20.5
+    y: -33.5
+    yaw: 270.0
+
+  - name: "Sexto Giro"
+    x: 16
+    y: -38.0
+    yaw: 180.0
+
+  - name: "Septimo Giro"
+    x: 13
+    y: -39.0
+    yaw: 180.0
+
+  - name: "Octavo Giro"
+    x: 2
+    y: -40.0
+    yaw: 180.0
+
+  - name: "Noveno Giro"
+    x: -9
+    y: -39.0
+    yaw: 180.0
+
+  - name: "Decimo Giro"
+    x: -14
+    y: -34.0
+    yaw: 90.0
+
+  - name: "Onceavo Giro"
+    x: -14
+    y: -24.0
+    yaw: 90.0
+
+  - name: "Doceavo Giro"
+    x: -15.5
+    y: -14.0
+    yaw: 90.0
+
+  - name: "Treceavo Giro"
+    x: -15.5
+    y: 0.0
+    yaw: 0.0
+
+  - name: "Final Giro"
+    x: 0.0
+    y: 0.0
+    yaw: 0.0
+
+navigation_params:
+  goal_tolerance: 0.8
+  angular_tolerance: 0.15
+  max_linear_speed: 0.4
+  max_angular_speed: 1.0
+  linear_kp: 0.6
+  angular_kp: 1.2
+  use_move_base: true
+  move_base_timeout: 120.0
+  move_base_retry_count: 2
