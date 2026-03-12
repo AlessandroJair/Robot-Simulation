@@ -44,11 +44,6 @@ jounal_comparison/
 │       └── scripts/
 │           ├── metrics_logger.py
 │           └── analyze_metrics.py
-├── plots/                      # Generated CSV data and EPS plots
-├── generate_sdf.py             # SDF model generator (mass normalization)
-├── plot_rocker_bogie.py        # 2D rocker-bogie geometry visualization
-├── plot_rocker_bogie.m         # MATLAB visualization script
-└── temp_stats.py               # Statistics computation across trials
 ```
 
 ## Technologies
